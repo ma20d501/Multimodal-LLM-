@@ -1,5 +1,5 @@
 # Multimodal-LLM-
-################################################################################################ Multinomial LLM to extract information ##########################################################################
+############################################# Multinomial LLM to extract information ################################################
 import os
 import base64
 import mimetypes
@@ -25,7 +25,8 @@ def process_image(image_path):
                 "content": [
                     {
                         "type": "text",
-                        "text": "Analyze this medical document. Extract ALL text elements. Use this exact JSON format:\n{'text_boxes': [{'text': '...'}\nConsider faint text, stamps, and handwritten notes. Return ONLY the JSON."
+                        "text": "Analyze this medical document. Extract ALL text elements. Use this 
+                        exact JSON format:\n{'text_boxes': [{'text': '...'}\nConsider faint text, stamps, and handwritten notes. Return ONLY the JSON."
                     },
                     {
                         "type": "image_url",
@@ -105,7 +106,7 @@ if __name__ == "__main__":
 }
 ```
 
-##############################################################################################  Graphical represntation in R  ##########################################################################################################################
+#########################  Graphical represntation in R  ############################################################
  
 python app.py --image_path /path/to/prescription1.png
 {
